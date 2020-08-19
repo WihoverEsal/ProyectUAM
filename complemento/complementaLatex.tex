@@ -1,0 +1,283 @@
+\documentclass{article}
+        \usepackage[utf8]{inputenc}
+        \usepackage{parskip}
+        \usepackage{amsfonts}
+        \usepackage{vmargin}
+        \usepackage{fancyhdr}
+        \usepackage{graphicx}
+        \usepackage[spanish,es-tabla]{babel}
+        \usepackage{subcaption}
+        \setpapersize{A4}
+        \setmargins{2.1cm} % margen izquierdo
+        {1.5cm} % margen superior
+        {16.5cm} % anchura del texto
+        {23.42cm} % altura del texto
+        {10pt} % altura de los encabezados
+        {1cm} % espacio entre el texto y los encabezados
+        {0pt} % altura del pie de página
+        {2cm} % espacio entre el texto y el pie de página
+        
+        \graphicspath{{img/}}
+        \renewcommand{\headrulewidth}{0.8pt}
+        \renewcommand{\footrulewidth}{0.8pt}
+        \cfoot{}
+        \rfoot{\thepage}
+        
+        \begin{document}
+        \newpage
+        \pagestyle{fancy}
+        \textit{  \huge \centerline{Reporte de Estatus} }
+        \newline
+        \large
+        \textit{ \LARGE \centerline{Espacio Académico: H294} }
+        \newline
+        \normalsize
+        \newline Fecha: Martes 11 de Agosto de 2020
+        \newline Hora: 19:36 hrs
+        \newline Intervalo de tiempo de 1 Mes
+        \newline
+        \newline Ultimo registro capturado por los sensores del espacio académico:
+        \newline
+        \begin{table}[h!]
+            \begin{center}
+                \begin{tabular}{|| c | c | c | c ||}
+                        \hline
+                        N$^{\circ}$ Sensor & Temperatura ($^{\circ}$C) & Humedad (\%) & Intensidad Luminosa (cd) \\ \hline            
+                        Sensor 1 & 30.9000 & 15 & 1500\\Sensor 2 & 22.4300 & 30 & 1002\\Sensor 3 & 21.1010 & 40 & 1007\\Sensor 4 & 25.7080 & 50 & 991\\\hline
+                \end{tabular}
+                \caption{Ultimo registro.}
+                \label{tab:ultReg}
+            \end{center}
+        \end{table}
+        \newline Las siguientes gráficas muestran la media calculada por dia para el sensor de temperatura de cada nodo.
+        \begin{figure}[h!]
+            \centering\begin{subfigure}[h]{0.42\linewidth}
+                                    \includegraphics[width=\linewidth]{gLineasTemp_H294_1_Mes_Nodo0.png}
+                                    \caption{Sensor Temperatura nodo 1}
+                                    \label{fig:Temp1}
+                                \end{subfigure}
+                                \begin{subfigure}[h]{0.42\linewidth}
+                                    \includegraphics[width=\linewidth]{gLineasTemp_H294_1_Mes_Nodo1.png}
+                                    \caption{Sensor Temperatura nodo 2}
+                                    \label{fig:Temp2}
+                                \end{subfigure}
+                                \begin{subfigure}[h]{0.42\linewidth}
+                                    \includegraphics[width=\linewidth]{gLineasTemp_H294_1_Mes_Nodo2.png}
+                                    \caption{Sensor Temperatura nodo 3}
+                                    \label{fig:Temp3}
+                                \end{subfigure}
+                                \begin{subfigure}[h]{0.42\linewidth}
+                                    \includegraphics[width=\linewidth]{gLineasTemp_H294_1_Mes_Nodo3.png}
+                                    \caption{Sensor Temperatura nodo 4}
+                                    \label{fig:Temp4}
+                                \end{subfigure}
+                                \caption{Sensor Temperatura por nodo}
+		    \label{fig:fig1}
+        \end{figure}
+        \newpage
+        Media por dia del sensor de Humedad segun el i-ésimo nodo en el espacio académico.
+        \begin{figure}[h!]
+            \centering\begin{subfigure}[h]{0.42\linewidth}
+                                    \includegraphics[width=\linewidth]{gLineasH_H294_1_Mes_Nodo0.png}
+                                    \caption{Sensor de Humedad nodo 1}
+                                    \label{fig:Humedad1}
+                                \end{subfigure}
+                                \begin{subfigure}[h]{0.42\linewidth}
+                                    \includegraphics[width=\linewidth]{gLineasH_H294_1_Mes_Nodo1.png}
+                                    \caption{Sensor de Humedad nodo 2}
+                                    \label{fig:Humedad2}
+                                \end{subfigure}
+                                \begin{subfigure}[h]{0.42\linewidth}
+                                    \includegraphics[width=\linewidth]{gLineasH_H294_1_Mes_Nodo2.png}
+                                    \caption{Sensor de Humedad nodo 3}
+                                    \label{fig:Humedad3}
+                                \end{subfigure}
+                                \begin{subfigure}[h]{0.42\linewidth}
+                                    \includegraphics[width=\linewidth]{gLineasH_H294_1_Mes_Nodo3.png}
+                                    \caption{Sensor de Humedad nodo 4}
+                                    \label{fig:Humedad4}
+                                \end{subfigure}
+                                \caption{Sensor Humedad por nodo}
+            \label{fig:fig2}
+        \end{figure}
+        \newline
+        \newline La media para el sensor de intensidad luminosa se muestra en las siguientes gráficas.
+        \begin{figure}[h!]
+            \centering\begin{subfigure}[h]{0.42\linewidth}
+                                    \includegraphics[width=\linewidth]{gLineasIL_H294_1_Mes_Nodo0.png}
+                                    \caption{Sensor de Intensidad Luminosa nodo 1}
+                                    \label{fig:IntL1}
+                                \end{subfigure}
+                                \begin{subfigure}[h]{0.42\linewidth}
+                                    \includegraphics[width=\linewidth]{gLineasIL_H294_1_Mes_Nodo1.png}
+                                    \caption{Sensor de Intensidad Luminosa nodo 2}
+                                    \label{fig:IntL2}
+                                \end{subfigure}
+                                \begin{subfigure}[h]{0.42\linewidth}
+                                    \includegraphics[width=\linewidth]{gLineasIL_H294_1_Mes_Nodo2.png}
+                                    \caption{Sensor de Intensidad Luminosa nodo 3}
+                                    \label{fig:IntL3}
+                                \end{subfigure}
+                                \begin{subfigure}[h]{0.42\linewidth}
+                                    \includegraphics[width=\linewidth]{gLineasIL_H294_1_Mes_Nodo3.png}
+                                    \caption{Sensor de Intensidad Luminosa nodo 4}
+                                    \label{fig:IntL4}
+                                \end{subfigure}
+                                \caption{Sensor Intensidad Luminosa por nodo}
+            \label{fig:fig3}
+        \end{figure}
+        \newpage
+        Máximo valor alcanzado por el sensor de temperatura en cada uno de los nodos.
+        \begin{figure}[h!]
+            \centering\begin{subfigure}[h]{0.42\linewidth}
+                                    \includegraphics[width=\linewidth]{gBarrasMaxTemp_H294_1_Mes_Nodo0.png}
+                                    \caption{Valor máximo sensor de Temperatura nodo 1}
+                                    \label{fig:TempMax1}
+                                \end{subfigure}
+                                \begin{subfigure}[h]{0.42\linewidth}
+                                    \includegraphics[width=\linewidth]{gBarrasMaxTemp_H294_1_Mes_Nodo1.png}
+                                    \caption{Valor máximo sensor de Temperatura nodo 2}
+                                    \label{fig:TempMax2}
+                                \end{subfigure}
+                                \begin{subfigure}[h]{0.42\linewidth}
+                                    \includegraphics[width=\linewidth]{gBarrasMaxTemp_H294_1_Mes_Nodo2.png}
+                                    \caption{Valor máximo sensor de Temperatura nodo 3}
+                                    \label{fig:TempMax3}
+                                \end{subfigure}
+                                \begin{subfigure}[h]{0.42\linewidth}
+                                    \includegraphics[width=\linewidth]{gBarrasMaxTemp_H294_1_Mes_Nodo3.png}
+                                    \caption{Valor máximo sensor de Temperatura nodo 4}
+                                    \label{fig:TempMax4}
+                                \end{subfigure}
+                                \caption{Sensor Temperatura por nodo}
+            \label{fig:fig4}
+        \end{figure}
+        \newline El valor máximo capturado por el sensor de humedad para cada nodo se puede observar en la siguiente figura
+        \begin{figure}[h!]
+            \centering\begin{subfigure}[h]{0.42\linewidth}
+                                    \includegraphics[width=\linewidth]{gBarrasMaxH_H294_1_Mes_Nodo0.png}
+                                    \caption{Mayor valor de sensor Humedad nodo 1}
+                                    \label{fig:HumedadMax1}
+                                \end{subfigure}
+                                \begin{subfigure}[h]{0.42\linewidth}
+                                    \includegraphics[width=\linewidth]{gBarrasMaxH_H294_1_Mes_Nodo1.png}
+                                    \caption{Mayor valor de sensor Humedad nodo 2}
+                                    \label{fig:HumedadMax2}
+                                \end{subfigure}
+                                \begin{subfigure}[h]{0.42\linewidth}
+                                    \includegraphics[width=\linewidth]{gBarrasMaxH_H294_1_Mes_Nodo2.png}
+                                    \caption{Mayor valor de sensor Humedad nodo 3}
+                                    \label{fig:HumedadMax3}
+                                \end{subfigure}
+                                \begin{subfigure}[h]{0.42\linewidth}
+                                    \includegraphics[width=\linewidth]{gBarrasMaxH_H294_1_Mes_Nodo3.png}
+                                    \caption{Mayor valor de sensor Humedad nodo 4}
+                                    \label{fig:HumedadMax4}
+                                \end{subfigure}
+                                \caption{Sensor Humedad por nodo}
+            \label{fig:fig5}
+        \end{figure}
+        \newpage
+        Para el sensor de intensidad luminosa en la siguiente figura se tienen los valores maximos alcanzados.
+        \begin{figure}[h!]
+            \centering\begin{subfigure}[h]{0.42\linewidth}
+                                    \includegraphics[width=\linewidth]{gBarrasMaxIL_H294_1_Mes_Nodo0.png}
+                                    \caption{Sensor Intensidad Luminosa nodo 1}
+                                    \label{fig:ILMax1}
+                                \end{subfigure}
+                                \begin{subfigure}[h]{0.42\linewidth}
+                                    \includegraphics[width=\linewidth]{gBarrasMaxIL_H294_1_Mes_Nodo1.png}
+                                    \caption{Sensor Intensidad Luminosa nodo 2}
+                                    \label{fig:ILMax2}
+                                \end{subfigure}
+                                \begin{subfigure}[h]{0.42\linewidth}
+                                    \includegraphics[width=\linewidth]{gBarrasMaxIL_H294_1_Mes_Nodo2.png}
+                                    \caption{Sensor Intensidad Luminosa nodo 3}
+                                    \label{fig:ILMax3}
+                                \end{subfigure}
+                                \begin{subfigure}[h]{0.42\linewidth}
+                                    \includegraphics[width=\linewidth]{gBarrasMaxIL_H294_1_Mes_Nodo3.png}
+                                    \caption{Sensor Intensidad Luminosa nodo 4}
+                                    \label{fig:ILMax4}
+                                \end{subfigure}
+                                \caption{Sensor Intensidad luminosa por nodo}
+            \label{fig:fig6}
+        \end{figure}
+        \newline
+        \newline Valor minimo capturado por el sensor de Temperatura en cada uno de los nodos.
+        \begin{figure}[h!]
+            \centering\begin{subfigure}[h]{0.42\linewidth}
+                                    \includegraphics[width=\linewidth]{gBarrasMinTemp_H294_1_Mes_Nodo0.png}
+                                    \caption{Minimo valor sensor Temperatura nodo 1}
+                                    \label{fig:TempMin1}
+                                \end{subfigure}
+                                \begin{subfigure}[h]{0.42\linewidth}
+                                    \includegraphics[width=\linewidth]{gBarrasMinTemp_H294_1_Mes_Nodo1.png}
+                                    \caption{Minimo valor sensor Temperatura nodo 2}
+                                    \label{fig:TempMin2}
+                                \end{subfigure}
+                                \begin{subfigure}[h]{0.42\linewidth}
+                                    \includegraphics[width=\linewidth]{gBarrasMinTemp_H294_1_Mes_Nodo2.png}
+                                    \caption{Minimo valor sensor Temperatura nodo 3}
+                                    \label{fig:TempMin3}
+                                \end{subfigure}
+                                \begin{subfigure}[h]{0.42\linewidth}
+                                    \includegraphics[width=\linewidth]{gBarrasMinTemp_H294_1_Mes_Nodo3.png}
+                                    \caption{Minimo valor sensor Temperatura nodo 4}
+                                    \label{fig:TempMin4}
+                                \end{subfigure}
+                                \caption{Sensor Temperatura por nodo}
+            \label{fig:fig7}
+        \end{figure}
+        \newpage
+        En el sensor de humedad se capturaron los valores minimos que se presentan la siguiente figura.
+        \begin{figure}[h!]
+            \centering\begin{subfigure}[h]{0.42\linewidth}
+                                    \includegraphics[width=\linewidth]{gBarrasMinH_H294_1_Mes_Nodo0.png}
+                                    \caption{Minimo valor sensor Humedad nodo 1}
+                                    \label{fig:HumedadMin1}
+                                \end{subfigure}
+                                \begin{subfigure}[h]{0.42\linewidth}
+                                    \includegraphics[width=\linewidth]{gBarrasMinH_H294_1_Mes_Nodo1.png}
+                                    \caption{Minimo valor sensor Humedad nodo 2}
+                                    \label{fig:HumedadMin2}
+                                \end{subfigure}
+                                \begin{subfigure}[h]{0.42\linewidth}
+                                    \includegraphics[width=\linewidth]{gBarrasMinH_H294_1_Mes_Nodo2.png}
+                                    \caption{Minimo valor sensor Humedad nodo 3}
+                                    \label{fig:HumedadMin3}
+                                \end{subfigure}
+                                \begin{subfigure}[h]{0.42\linewidth}
+                                    \includegraphics[width=\linewidth]{gBarrasMinH_H294_1_Mes_Nodo3.png}
+                                    \caption{Minimo valor sensor Humedad nodo 4}
+                                    \label{fig:HumedadMin4}
+                                \end{subfigure}
+                                \caption{Sensor Humedad por nodo}
+            \label{fig:fig8}
+        \end{figure}        
+        \newline Minimo valor capturado por el sensor de Intensidad Luminosa en cada nodo.
+        \begin{figure}[h!]
+            \centering\begin{subfigure}[h]{0.42\linewidth}
+                                    \includegraphics[width=\linewidth]{gBarrasMinIL_H294_1_Mes_Nodo0.png}
+                                    \caption{Minimo valor sensor Intensidad Luminosa nodo 1}
+                                    \label{fig:ILMin1}
+                                \end{subfigure}
+                                \begin{subfigure}[h]{0.42\linewidth}
+                                    \includegraphics[width=\linewidth]{gBarrasMinIL_H294_1_Mes_Nodo1.png}
+                                    \caption{Minimo valor sensor Intensidad Luminosa nodo 2}
+                                    \label{fig:ILMin2}
+                                \end{subfigure}
+                                \begin{subfigure}[h]{0.42\linewidth}
+                                    \includegraphics[width=\linewidth]{gBarrasMinIL_H294_1_Mes_Nodo2.png}
+                                    \caption{Minimo valor sensor Intensidad Luminosa nodo 3}
+                                    \label{fig:ILMin3}
+                                \end{subfigure}
+                                \begin{subfigure}[h]{0.42\linewidth}
+                                    \includegraphics[width=\linewidth]{gBarrasMinIL_H294_1_Mes_Nodo3.png}
+                                    \caption{Minimo valor sensor Intensidad Luminosa nodo 4}
+                                    \label{fig:ILMin4}
+                                \end{subfigure}
+                                \caption{Sensor Intensidad Luminosa por nodo}
+                \label{fig:fig9}
+            \end{figure}
+        \end{document}
